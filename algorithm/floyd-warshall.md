@@ -62,3 +62,20 @@
 |**4**|5|10|3|0|
 
 <br/>
+
+## source code
+```C++
+void floyd(){
+    for(int k=0; k<n; k++){ // k : 거쳐가는 노드
+        for(int i=0; i<n; i++){ // i : 출발 노드
+            for(int j=0; j<n; j++){ // j : 도착 노드
+                if(d[i][k] + d[k][j] < d[i][j]){
+                    d[i][j] = d[i][k] + d[k][j];
+                }
+            }
+        }
+    }
+}
+```
+
+- 시간 복잡도 : O(n^3) 
