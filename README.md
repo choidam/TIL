@@ -14,6 +14,7 @@
 
 ### Algorithm
 - [Floyd-warshall algorithm (플로이드 와샬 알고리즘)](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/floyd-warshall.md)
+- [DFS & BFS](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/DFS_and_BFS.md)
 
 ---
 
