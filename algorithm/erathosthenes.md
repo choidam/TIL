@@ -99,4 +99,6 @@
 
 <br/>
 
-> 참고하면 좋은 알고리즘 문제  [백준 - 1929번 소수 구하기](https://www.acmicpc.net/problem/1929)
+> 참고하면 좋은 알고리즘 문제  
+1. [백준 - 1929번 소수 구하기](https://www.acmicpc.net/problem/1929)
+2. [프로그래머스 - 소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
