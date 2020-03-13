@@ -13,9 +13,9 @@
 ---
 
 ### Algorithm
-- [Floyd-warshall algorithm (플로이드 와샬 알고리즘)](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/floyd-warshall.md)
+- [Floyd-warshall algorithm](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/floyd-warshall.md)
 - [DFS & BFS](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/DFS_and_BFS.md)
-- [Eratosthenes(에라토스테네스의 체 알고리즘)](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/erathosthenes.md)
+- [Eratosthenes (에라토스테네스의 체 알고리즘)](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/erathosthenes.md)
 
 ---
 
@@ -24,6 +24,7 @@
 - [Picker](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/picker.md)
 - [TabBar using Storyboard Reference](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/StoryboardReference.md)
 - [Tap Gesture Recognizer](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/tapGestureRecognizer.md)
+- [UIImagePickerController](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/UIImagePickerController.md)
 
 
 
