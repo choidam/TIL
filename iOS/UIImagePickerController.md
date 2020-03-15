@@ -55,3 +55,6 @@ extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationCon
 5. 확인
 
 <img src="./screenshots/imagepicker.gif" width="200" height="400"> 
+
+> simulator 에서 확대 모션을 취하려면 option 키를 눌러야 한다.
+
