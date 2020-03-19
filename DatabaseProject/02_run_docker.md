@@ -64,7 +64,7 @@ mysql> use mysql; // mysql database 사용
 
 <br/>
 
-### 📌 nbsp; Launchpad.net/test-db 설치하기
+### 📌 &nbsp; Launchpad.net/test-db 설치하기
 
 <img src="./screenshots/test-db설치2.png" width="700">
 
