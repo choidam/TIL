@@ -37,3 +37,4 @@
 ### DataBase Project 
 
 - [install docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/01_install_docker.md)
+- [run docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/02_run_docker.md)
