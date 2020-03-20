@@ -65,3 +65,5 @@ $ sudo apt install docker.compose
 ```
 
 이제 도커 실습 환경 준비가 끝났다 🤩‼️‼️
+이제 [실습](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/02_run_docker.md)해보자
+
