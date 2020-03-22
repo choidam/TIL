@@ -27,6 +27,16 @@ pip install msgpack
 pip install keras
 ```
 
+Anaconda 를 설치한 후 pillow opencv 를 설치했다.
+
+```
+conda create -–name myenv
+
+conda activate myenv
+
+(myenv) conda install pillow opencv
+```
+
 <br/>
 
 ### 실습
