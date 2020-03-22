@@ -26,15 +26,16 @@
 - [TabBar using Storyboard Reference](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/StoryboardReference.md)
 - [Tap Gesture Recognizer](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/tapGestureRecognizer.md)
 - [UIImagePickerController](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/UIImagePickerController.md)
+- [Animated Bar Chart Using SwiftUI](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/animated_bar_chart_using_swiftUI.md)
 
 ---
 
 ### Deep Learning
-- [install tensorflow](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/install_tensorflow.md)
+- [Install tensorflow](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/install_tensorflow.md)
 
 ---
 
 ### DataBase Project 
 
-- [install docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/01_install_docker.md)
-- [run docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/02_run_docker.md)
+- [Install docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/01_install_docker.md)
+- [Run docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/02_run_docker.md)
