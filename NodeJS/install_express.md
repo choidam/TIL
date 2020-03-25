@@ -28,3 +28,14 @@ npm start
 
 
 ``` http://localhost:3000 ``` 주소에서 위 화면이 뜬다면 성공이다❗️
+
+<br/>
+
+데이터가 바뀔 때마다 다시 서버를 껐다 켜기 귀찮으므로 ``` nodemon ``` 을 설치해준다.
+
+```
+npm install nodemon
+nodemon
+```
+
+개발 환경이 편리해졌다 👏 
