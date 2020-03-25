@@ -15,7 +15,10 @@ npm install -g express-generator
 ```
 express [project name] -v pug
 ```
-> 나는 html 대신 pug 를 사용하는 것이 편해 명령어 뒤에 ``` -v pug ``` 를 입력했다.
+> 나는 html 대신 pug 를 사용하는 것이 편해 명령어 뒤에 ``` -v pug ``` 를 입력했다.   
+
+> ``` --git ``` 명령어를 뒤에 붙이면 .gitignore 파일을 자동으로 생성해준다.   
+``` -c sass ``` 명령어는 css 는 sass 를 사용하게 한다.
 
 ```
 cd [project name]
