@@ -43,3 +43,4 @@
 ### NodeJS
 
 - [Install Express](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/install_express.md)
+- [RestAPI with MySQL](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/mysql.md)
