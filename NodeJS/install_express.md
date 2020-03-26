@@ -68,3 +68,28 @@ nodemon
 ```
 
 개발 환경이 편리해졌다 👏 개발할 준비 완료❗️
+
+
+<br/>
+
+## Route 란?
+
+특정 url/method 가 왔을 때 처리하는 handler 를 등록함
+
+```js
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
+
+```
+> 기본으로 setting 된 코드 (```routes/index.js```)
+
+- req : 미들웨어 함수에 대한 **HTTP 요청** 인수
+- res : 미들웨어 함수에 대한 **HTTP 응답** 인수 
+- next : 미들웨어 함수에 대한 **callback** 인수
