@@ -1,8 +1,34 @@
-## Install Express
+## 🛠 Install & Run Express
 
 > 선수환경 : npm, Visual Studio
 
+### Node.js 란?
+- 이벤트 기반
+- 비동기(Asynchronous)
+  > 결과가 나올 때까지 기다리지 않고 계속 진행. 결과가 나오면 이벤트가 발생함
+  
+### NPM (Node Package Manager) 이란?
+- 패키지를 쉽게 사용할 수 있도록 해주는 프로그램
+- ``` package.json ``` : 현재 작업중인 패키지의 메타 정보
+- 사용법
+```sh
+$ npm init
+$ npm install(uninstall) [package name]
+```
+  - --save : package.json 에 dependency 저장 
+  - --no-save : save 하지 않음
+  - --save-dev : package.jsson 에 dev-dependency 저장
+  - -g : global 로 install (command 에 추가) 
+
+
+### Express 란?
+- Node.js 를 위하 빠르고 개방적인 간결한 web framework
+- 미들웨어들로 연결됨 (req, res, next)
+- view 를 위한 템플릿 엔진은 다양하게 이용 가능
+
 <br/>
+
+### Let's Install Express 🔥
 
 설치를 원하는 디렉토리에 들어가서 다음 명령어를 입력한다.
 
@@ -41,4 +67,4 @@ npm install nodemon
 nodemon
 ```
 
-개발 환경이 편리해졌다 👏 
+개발 환경이 편리해졌다 👏 개발할 준비 완료❗️
