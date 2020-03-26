@@ -28,6 +28,11 @@
 
 ---
 
+### R
+- [Install R & RStudio](https://github.com/ChoiEunji0114/TIL/blob/master/RStudio/01_install_Rstudio.md)
+
+---
+
 ### DataBase Project 
 
 - [Install docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/01_install_docker.md)
