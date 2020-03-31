@@ -38,6 +38,7 @@
 - [Install docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/01_install_docker.md)
 - [Run docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/02_run_docker.md)
 - [SQL Tutorial](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/03_SQL_tutorial.md)
+- [SQL Database](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/04_SQL_Database.md)
 
 ---
 
