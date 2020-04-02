@@ -25,6 +25,8 @@
 
 ### Deep Learning
 - [Install tensorflow](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/install_tensorflow.md)
+- [Numpy Tutorial](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/quickstart_numpy.ipynb)
+  > Reference : [quick start numpy](https://numpy.org/devdocs/user/quickstart.html)
 
 ---
 
