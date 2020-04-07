@@ -33,7 +33,7 @@
 ---
 
 ### R
-- [Install R & RStudio](https://github.com/ChoiEunji0114/TIL/blob/master/RStudio/01_install_Rstudio.md)
+- [Install R & RStudio](https://github.com/ChoiEunji0114/TIL/blob/master/R/01_install_Rstudio.md)
 
 ---
 
