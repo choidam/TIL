@@ -20,6 +20,8 @@
 - [Tap Gesture Recognizer](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/tapGestureRecognizer.md)
 - [UIImagePickerController](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/UIImagePickerController.md)
 - [Animated Bar Chart Using SwiftUI](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/animated_bar_chart_using_swiftUI.md)
+- [LineChart](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/lineChart.md)
+- [Drawing with canvasView](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/drawing.md)
 
 ---
 
