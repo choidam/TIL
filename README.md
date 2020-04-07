@@ -34,6 +34,7 @@
 
 ### R
 - [Install R & RStudio](https://github.com/ChoiEunji0114/TIL/blob/master/R/01_install_Rstudio.md)
+- [Basic R Grammer](https://github.com/ChoiEunji0114/TIL/blob/master/R/02_R_basic.md)
 
 ---
 
