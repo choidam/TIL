@@ -324,3 +324,118 @@ row1 row2 row3
    4    5    6 
 ```
 
+<br/>
+
+## DataFrame
+
+2차원 형태로 각 컬럼별로 다른 형태의 데이터를 가짐   
+배열 데이터를 모아 구성함
+
+```r
+> no = c(1,2,3,4)
+> name = c("Apple", "Banana", "Peach", "Berry")
+> prices = c(500,200,200,50)
+> qty = c(5,2,7,9)
+> 
+> fruit = data.frame(No=no, Name=name, Prices=prices, QTY=qty)
+> fruit
+  No   Name Prices QTY
+1  1  Apple    500   5
+2  2 Banana    200   2
+3  3  Peach    200   7
+4  4  Berry     50   9
+> 
+> fruit[1,]
+  No  Name Prices QTY
+1  1 Apple    500   5
+> 
+> fruit[,2:3]
+    Name Prices
+1  Apple    500
+2 Banana    200
+3  Peach    200
+4  Berry     50
+> fruit[,-2]
+  No Prices QTY
+1  1    500   5
+2  2    200   2
+3  3    200   7
+4  4     50   9
+```
+
+```r
+> name=c("kang", "kang2", "kwon", "kwon2")
+> eng = c(90, 80, 60, 70)
+> mat = c(50, 60, 100, 20)
+> score = data.frame(Name=name, Eng=eng, Mat=mat)
+> score
+   Name Eng Mat
+1  kang  90  50
+2 kang2  80  60
+3  kwon  60 100
+4 kwon2  70  20
+> 
+> score$avg=(score$Eng+score$Mat)/2 # 파생변수 생성
+> score
+   Name Eng Mat avg
+1  kang  90  50  70
+2 kang2  80  60  70
+3  kwon  60 100  80
+4 kwon2  70  20  45
+```
+<br/>
+
+## List
+
+키, 값의 형태로 데이터가 구성됨
+
+
+```r
+> # member list 생성
+> member=list(name="Choi", address="Seoul", tel="01011112222", gender="F")
+> member
+$name
+[1] "Choi"
+
+$address
+[1] "Seoul"
+
+$tel
+[1] "01011112222"
+
+$gender
+[1] "F"
+
+> 
+> member$name # 조회
+[1] "Choi"
+> member[1:2] # 조회
+$name
+[1] "Choi"
+
+$address
+[1] "Seoul"
+
+> member$job="student" # 추가
+> member
+$name
+[1] "Choi"
+
+$address
+[1] "Seoul"
+
+$tel
+[1] "01011112222"
+
+$gender
+[1] "F"
+
+$job
+[1] "student"
+```
+
+<br/>
+
+
+
+
