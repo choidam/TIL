@@ -15,6 +15,13 @@
 - ```tail()``` : 데이터의 끝 부분을 보여 줌
 - ```summary()``` : mean, max, min 값 등 데이터의 요약본을 보여 줌
 
+### R의 데이터 타입 🗂
+
+- [Vector](#Vector)
+- [Matrix](#Matrix)
+- [DataFrame](#DataFrame)
+- [List](#List)
+
 <br/>
 
 ## Vector
