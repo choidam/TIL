@@ -130,9 +130,9 @@ source .bashrc
 # nano /var/lib/tomcat8/webapps/ROOT/sample.jsp
 ```
 
-<img src="./screenshots/jdbc/01_select.png" width="900">
+<img src="./screenshots/jdbc/01_select.png" width="600">
 
-<img src="./screenshots/jdbc/01_select2.png" width="900">
+<img src="./screenshots/jdbc/01_select2.png" width="600">
 
 employees table 의 first_name, last_name 을 모두 잘 로드해옴을 확인할 수 있다.
 
