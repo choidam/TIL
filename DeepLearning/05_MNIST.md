@@ -9,7 +9,7 @@
  
  <br/>
 
-1. ```minst_data.py```
+## 1.  ```minst_data.py```
 
 ```python
 import gzip
@@ -64,7 +64,9 @@ def load_mnist(normalize=True, flatten=True, one_hot_label=True):
 
 ```
 
-2. ```mnist01.py``` (```load_mnist``` 테스트)
+<br/>
+
+## 2. ```mnist01.py``` (```load_mnist``` 테스트)
 
 ```python
 import numpy as np 
@@ -90,7 +92,9 @@ plt.show()
 ```
 <img src="./screenshot/04_nn.png" width="600">
 
-3. functions.py
+<br/>
+
+## 3. ```functions.py```
 
 ```python
 import numpy as np
@@ -103,7 +107,9 @@ def softmax(x):
     return e / np.sum(e)
 ```
 
-4. Fully-Connected Network (3 Layer) : ```mnist02.py```
+<br/>
+
+## 4. Fully-Connected Network (3 Layer) : ```mnist02.py```
 
 <img src="./screenshot/05_mnist.png" width="600">
 
