@@ -1,6 +1,6 @@
 # MNIST 인식
 
-> 선수환경 : [여기](http://yann.lecun.com/exdb/mnist/) 에서 gz 압축하일 4개 다운로드
+> 선수환경 : [여기](http://yann.lecun.com/exdb/mnist/) 에서 gz 압축파일 4개 다운로드
 
 - load_mnist: gzip 파일을 읽어서 np.array로 변환 후 차원 조정
   - normalize : 입력(0 ~ 255 정수) 을 0.0 ~ 1.0 사이의 실수로 변환
@@ -90,7 +90,7 @@ plt.show()
 ```profile
 5, 0, 4, 1, 9, 2, 1, 3, 1, 4, 
 ```
-<img src="./screenshot/04_nn.png" width="600">
+<img src="./screenshot/04_nn3.png" width="600">
 
 <br/>
 
