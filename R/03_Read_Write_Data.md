@@ -1,4 +1,4 @@
-# FileData
+# FileData 🗂
 
 ### 📌 Read & Write FileData
 
@@ -38,6 +38,8 @@ Error: object 'fruit' not found
 
 ### 📌 Read & Write CSV Data
 
+CSV : Comma Seperated Value
+
 ```r
 > write.csv(fruit, "fruit.csv")
 ```
@@ -62,5 +64,27 @@ Error: object 'fruit' not found
 ```
 
 위 명령올 csv 파일을 저장하고 불러올 수 있다.
+
+<img src="./screenshots/03_basic.png" width="500">
+
+위와 같이 헤더가 없는 경우 데이터를  읽어보자 
+
+
+```r
+> fruit2<-read.csv("fruit_noheader.csv", header = FALSE)
+> fruit2
+  V1 V2     V3  V4 V5
+1  1  1  Apple 500  5
+2  2  2 Banana 200  2
+3  3  3  Peach 300  7
+4  4  4  Berry 400  9
+> names(fruit2)<-c("X", "No", "Name", "Price", "Quantity") # 헤더를 직접 넣는다.
+> fruit2
+  X No   Name Price Quantity
+1 1  1  Apple   500        5
+2 2  2 Banana   200        2
+3 3  3  Peach   300        7
+4 4  4  Berry   400        9
+```
 
  
