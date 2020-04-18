@@ -15,12 +15,18 @@
 - ```tail()``` : 데이터의 끝 부분을 보여 줌
 - ```summary()``` : mean, max, min 값 등 데이터의 요약본을 보여 줌
 
-### R의 데이터 타입 🗂
+### R의 데이터 구조 🗂
 
-- [Vector](#Vector)
-- [Matrix](#Matrix)
-- [DataFrame](#DataFrame)
-- [List](#List)
+| 자료 형태 | 구성 차원 | 자료 유형 | 복수 데이터 유형 적용 여부 |
+|---|---|---|--|
+| [Vector](#Vector) | 1차원| 수치/문자/복소수/논리 | 불가능 |
+| [Matrix](#Matrix) |2차원 | 수치/문자/복소수/논리  | 불가능 |
+| [DataFrame](#DataFrame) | 2차원 | 수치/문자/복소수/논리  | 가능 |
+| Array | 2차원 이상 | 수치/문자/복소수/논리/수치/문자 | 불가능 |
+| [Factor](#Factor) | 1차원 | 수치/문자  | 불가능 |
+| Time series | 2차원  | 수치/문자/복소수/논리  | 불가능 |
+| [List](#List) | 2차원 이상 | 수치/문자/복소수/논리함수/표현식/call  | 가능 |
+
 
 <br/>
 
@@ -107,9 +113,30 @@
 [1] 1 4 4 8 9
 > x[2>x & x<5]
 [1] 1
+> ex<-c(1,3,7,NA,12)
+> ex[ex%%2==0]
+[1] NA 12
+> ex[ex%%2==0 & !is.na(ex)]
+[1] 12
 ```
-- ```x[-2]``` : x의 2번째 원소를 제외함
-- ```x[2<x & x<5]``` : 조건에 맞는 원소를 추출함
+- `x[-2]` : x의 2번째 원소를 제외함
+- `x[2<x & x<5]` : 조건에 맞는 원소를 추출함
+- `is.na()` : 주어진 벡터 값이 NA이면 true, 아니면 false 를 반환
+- `x[2<x & x<5]` : 조건에 맞는 원소를 추출함
+
+```r
+> x <- c(1,3,4)
+> x
+[1] 1 3 4
+> names(x) <- c("Choi", "Park", "Kim")
+> x
+Choi Park  Kim 
+   1    3    4 
+> x[c("Choi", "Park")]
+Choi Park 
+   1    3 
+```
+- `names(x) <- value` : x: 객체, value: 저장할 이름
 
 ```r
 > x = c(1,4,6,8,9)
@@ -331,12 +358,44 @@ row1 row2 row3
    4    5    6 
 ```
 
+```r
+> x <- matrix(1:9, nrow=3)
+> x
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+> t(x)
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+[3,]    7    8    9
+```
+- `t(x)` : 행렬 또는 데이터 프레임의 전치 행렬을 구함
+
+```r
+> A<-matrix(1:4, nrow=2)
+> A
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+> solve(A)
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> A %*% solve(A)
+     [,1] [,2]
+[1,]    1    0
+[2,]    0    1
+```
+- `solve(x)` : 행렬 x의 역행렬을 구함
+
 <br/>
 
 ## DataFrame
 
 2차원 형태로 각 컬럼별로 다른 형태의 데이터를 가짐   
-배열 데이터를 모아 구성함
+서로 다른 벡터로 구성된 자료들을 열로 배치한 자료구조
 
 ```r
 > no = c(1,2,3,4)
@@ -443,69 +502,32 @@ $job
 
 <br/>
 
-## FileData
+## Factor
 
-### 📌 Read & Write FileData
-
-```r
-> no=c(1,2,3,4)
-> name=c("Apple","Banana","Peach","Berry")
-> price=c(500,200,300,400)
-> qty=c(5,2,7,9)
-> fruit=data.frame(No=no, Name=name, Price=price, Quantity=qty)
-> fruit
-  No   Name Price Quantity
-1  1  Apple   500        5
-2  2 Banana   200        2
-3  3  Peach   300        7
-4  4  Berry   400        9
-> save(fruit, file="test.dat") # working directory 에 fruit데이터 저장
-```
-
-<img src="./screenshots/02_basic1.png" width="500">
-
-working directory 에 ```test.dat``` 파일이 새로 생겼음을 확인할 수 있다.
+저장 값의 크기보다 의미가 중요한 질적 자료를 위해 사용    
+factor 로 지정된 1,2,3 은 단지 세 개의 그룹 혹은 상태를 구별짓는 의미로 사용
 
 ```r
-> rm(fruit) # fruit 데이터 삭제 
-> fruit
-Error: object 'fruit' not found
-> load("test.dat") # 파일 읽기
-> fruit
-  No   Name Price Quantity
-1  1  Apple   500        5
-2  2 Banana   200        2
-3  3  Peach   300        7
-4  4  Berry   400        9
+factor(x, levels, labels=levels, ordered)
 ```
+- `x` : factor 로 표현하려는 값 또는 벡터
+- `levels` : 값의 레벨
+- `labels` : 실제 값 외에 사용할 각 수준의 이름 (벡터)
+- `ordered` : TRUE 이면 순서형, FALSE 이면 명목형 (기본)
 
-<br/>
-
-### 📌 Read & Write CSV Data
 
 ```r
-> write.csv(fruit, "fruit.csv")
+> x <- 1:5
+> x
+[1] 1 2 3 4 5
+> factor(x, levels = c(1,2,3,4))
+[1] 1    2    3    4    <NA>
+Levels: 1 2 3 4
+> factor(x, levels = c(1,2,3,4), labels = c("a", "b", "c", "d"))
+[1] a    b    c    d    <NA>
+Levels: a b c d
+> factor(x, levels = c(1,2,3,4), labels = c("a", "b", "c", "d"), ordered=TRUE)
+[1] a    b    c    d    <NA>
+Levels: a < b < c < d
 ```
 
-<img src="./screenshots/02_basic2.png" width="500">
-
-<img src="./screenshots/02_basic3.png" width="500">
-
-working directory 에 ```fruit.csv``` 파일이 새로 생겼음을 확인할 수 있다.
-
-```r
-> rm(fruit)
-> fruit
-Error: object 'fruit' not found
-> fruit=read.csv("fruit.csv")
-> fruit
-  X No   Name Price Quantity
-1 1  1  Apple   500        5
-2 2  2 Banana   200        2
-3 3  3  Peach   300        7
-4 4  4  Berry   400        9
-```
-
-위 명령올 csv 파일을 저장하고 불러올 수 있다.
-
- 
