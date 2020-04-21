@@ -36,11 +36,18 @@ Perceptron이 가중치를 직접 수동으로 설정하는 작업을 한다는 
 
 <br/>
 
-### ReLU Function
+## Activation Function
 
-<img src="./screenshot/04_nn9.png" width="300">
+어떠한 신호를 입력받아 이를 적절한 처리를 하여 출력해주는 함수이다.   
+이를 통해 출력된 신호가 다음 단계에서 활성화 되는지를 결정한다. 
+즉, `input data` > `activation function` > `output data` 형태를 가진다.
 
-입력이 0을 넘으면 그 입력을 그대 출력하고, 0 이하면 0을 출력하는 함수이다.
+### Step Function
+
+<img src="./screenshot/04_nn10.png" width="300">
+
+퍼셉트론은 활성화 함수로 `step function` (계단 함수)를 이용한다.   
+특정 임계값을 넘기면 활성화되는 함수이다.
 
 <br/>
 
@@ -48,6 +55,15 @@ Perceptron이 가중치를 직접 수동으로 설정하는 작업을 한다는 
 
 <img src="./screenshot/04_nn5.png" width="200">
 
-<img src="./screenshot/04_nn8.png" width="400">
+<img src="./screenshot/04_nn.png" width="400">
 
-가중치 값을 전달할 때 좀 더 부드럽게 양을 조절해 전달한다.
+가중치 값을 전달할 때 좀 더 부드럽게 양을 조절해 전달한다.  0~1 사이의 값을 가진다.
+
+<br/>
+
+### ReLU Function
+
+<img src="./screenshot/04_nn9.png" width="300">
+
+입력이 0을 넘으면 그 입력을 그대 출력하고, 0 이하면 0을 출력하는 함수이다.
+
