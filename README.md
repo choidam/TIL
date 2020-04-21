@@ -29,8 +29,9 @@
 ### Deep Learning
 - [Install tensorflow](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/01_install_tensorflow.md)
 - [Scipy Tutorial](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/03_scipy.md)
-- [Neural Network](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/04_NeuralNetwork.md)
-- [MNIST data](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/05_MNIST.md)
+- [Perceptron & Neural Network](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/04_NeuralNetwork.md)
+- [Forward Pass (1)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/05_Forward_pass.md)
+- [Forward Pass (2)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/05_Forward_pass2.md)
 
 ---
 
