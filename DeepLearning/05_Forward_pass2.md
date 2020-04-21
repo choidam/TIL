@@ -9,7 +9,7 @@
  
  <br/>
 
-## 1.  ```minst_data.py```
+## `minst_data.py`
 
 ```python
 import gzip
@@ -61,12 +61,11 @@ def load_mnist(normalize=True, flatten=True, one_hot_label=True):
             dataset[key] = dataset[key].reshape(-1,1,28,28)
 
     return ((dataset['train_img'], dataset['train_label']), (dataset['test_img'], dataset['test_label']))
-
 ```
 
 <br/>
 
-## 2. ```mnist01.py``` (```load_mnist``` 테스트)
+## `mnist01.py` (`load_mnist` 테스트)
 
 ```python
 import numpy as np 
@@ -92,26 +91,16 @@ plt.show()
 ```
 <img src="./screenshot/04_nn3.png" width="600">
 
-<br/>
-
-## 3. ```functions.py```
-
-```python
-import numpy as np
-
-def sigmoid(x) :
-    return 1 / (1+np.exp(-x))
-
-def softmax(x):
-    e = np.exp(x - np.max(x))
-    return e / np.sum(e)
-```
+`load_mnist()` 으로 `x_train`, `y_train` 데이터 10개를 가져와서 출력해 보았다.   
+`x_train` 은 학습 데이터 중 이미지 데이터를 의미하고, `y_train` 은 학습 데이터 중 정답 데이터를 의미한다.
 
 <br/>
 
-## 4. Fully-Connected Network (3 Layer) : ```mnist02.py```
+## Fully-Connected Network (3 Layer) : ```mnist02.py```
 
 <img src="./screenshot/05_mnist.png" width="600">
+
+20, 10 개의 perceptron 을 가진 hidden layer 를 가지며 activation 함수로 softmax 를 사용하는 network를 만들어보자.
 
 
 ```python
@@ -119,8 +108,9 @@ import numpy as np
 from mnist_data import load_mnist
 from functions import sigmoid, softmax
 
-layers = [784, 20, 10, 10]
+layers = [784, 20, 10, 10] # perceptron 개수
 
+# 네트워크 초기화
 def init_network() :
     network = {}
     network['W1'] = 0.01 * np.random.randn(layers[0], layers[1]) # 784 * 20
@@ -131,6 +121,7 @@ def init_network() :
     network['b3'] = np.zeros(layers[3])
     return network
 
+# 예측
 def predict(network, x):
     W1, W2, W3 = network['W1'], network['W2'], network['W3']
     b1, b2, b3 = network['b1'], network['b2'], network['b3']
@@ -139,14 +130,16 @@ def predict(network, x):
     y = softmax(np.dot(x2,W3) + b3)
     return y
 
+# 정확도
 def accuracy(network, x, t):
     y = predict(network, x) 
-    y = np.argmax(y, axis=1)
-    t = np.argmax(t, axis=1)
-    accuracy = np.sum(y==t)/ float(y.shape[0])
+    y = np.argmax(y, axis=1) # 내가 예측한 정답
+    t = np.argmax(t, axis=1) # 실제 정답
+    accuracy = np.sum(y==t)/ float(y.shape[0]) # 정답 비교하기
     return accuracy
 
 (x_train, y_train), (x_test, y_test) = load_mnist()
+
 network = init_network()
 print(accuracy(network, x_train, y_train))
 ```
