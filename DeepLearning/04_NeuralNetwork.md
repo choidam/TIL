@@ -30,7 +30,7 @@ perceptron 의 출력값은 1 또는 0 이기 때문에 선형 분류 (linear cl
 Perceptron이 가중치를 직접 수동으로 설정하는 작업을 한다는 한계점을 해결한 방법이 **신경망** 이다.   
 알아서 가중치 값을 설정하고 조정하는 것이 (자동으로 학습) 신경망의 큰 특징이다
 
-<img src="./screenshots/04_nn6.png" height="200"> <img src="./screenshots/04_nn7.png" height="200">
+<img src="./screenshot/04_nn6.png" height="200"> <img src="./screenshot/04_nn7.png" height="200">
 
 신경망은 Input(입력층), Hidden(은닉층), Output(출력층) 으로 표현할 수 있다.
 
@@ -38,7 +38,7 @@ Perceptron이 가중치를 직접 수동으로 설정하는 작업을 한다는 
 
 ### ReLU Function
 
-<img src="./screenshots/04_nn9.png" width="300">
+<img src="./screenshot/04_nn9.png" width="300">
 
 입력이 0을 넘으면 그 입력을 그대 출력하고, 0 이하면 0을 출력하는 함수이다.
 
@@ -47,7 +47,7 @@ Perceptron이 가중치를 직접 수동으로 설정하는 작업을 한다는 
 
 <img src="./screenshot/04_nn5.png" width="200">
 
-<img src="./screenshots/04_nn8.png" width="400">
+<img src="./screenshot/04_nn8.png" width="400">
 
 가중치 값을 전달할 때 좀 더 부드럽게 양을 조절해 전달한다.
 
