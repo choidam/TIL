@@ -1,8 +1,8 @@
-# Neural Network
+# Perceptron & Neural Network
 
 > 강의 자료 : 딥러닝 (2020-1) 
 
-### 📌 Perceptron
+## Perceptron
 
 다수의 신호 (Input) 을 입력받아서 하나의 신호 (Output) 을 출력한다.    
 perceptron 의 출력값은 1 또는 0 이기 때문에 선형 분류 (linear classifier) 모형이다.
@@ -17,13 +17,39 @@ perceptron 의 출력값은 1 또는 0 이기 때문에 선형 분류 (linear cl
 - **가중치** (weight) : 입력 신호가 결과 출력에 주는 영향도를 조절하는 매개변수
 - **변향** (bias) : 뉴런이 얼마나 쉽게 활성화 되느냐를 조절하는 매개변수
 
+퍼셉트론은 선형분류는 할 수 있지만 비선형분류는 불가능하다는 한계점이 있다.   
+이를 극복하기 위해 다층 퍼셉트론을 만든다. 층을 겹겹이 쌓아나가는 것이다.   
+
+단층 퍼셉트론은 `step function` (임계값을 넘어섰을 때 출력을 1로 함) 을 활성화 함수로 사용한다.   
+다층 퍼셉트론은 층이 여러개이며 `sigmoid function` 을 활성화 함수로 사용한다.
+
 <br/>
 
-### 📌 Sigmoid Function 
+## Neural Network
 
-가중치 값을 전달할 때 좀 더 부드럽게 양을 조절해 전달한다.
+Perceptron이 가중치를 직접 수동으로 설정하는 작업을 한다는 한계점을 해결한 방법이 **신경망** 이다.   
+알아서 가중치 값을 설정하고 조정하는 것이 (자동으로 학습) 신경망의 큰 특징이다
+
+<img src="./screenshots/04_nn6.png" height="200"> <img src="./screenshots/04_nn7.png" height="200">
+
+신경망은 Input(입력층), Hidden(은닉층), Output(출력층) 으로 표현할 수 있다.
+
+<br/>
+
+### ReLU Function
+
+<img src="./screenshots/04_nn9.png" width="300">
+
+입력이 0을 넘으면 그 입력을 그대 출력하고, 0 이하면 0을 출력하는 함수이다.
+
+
+### Sigmoid Function 
 
 <img src="./screenshot/04_nn5.png" width="200">
+
+<img src="./screenshots/04_nn8.png" width="400">
+
+가중치 값을 전달할 때 좀 더 부드럽게 양을 조절해 전달한다.
 
 ```python
 import numpy as np
