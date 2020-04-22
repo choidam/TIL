@@ -111,7 +111,7 @@ hidden layer1개, output layer 1개 만듦
 
 3. Visualization
 
-<img src="./screenshot/07_back1.png" width="600">
+<img src="./screenshot/07_back2.png" width="600">
 
 위는 에러율 그래프이다. 시간이 지날수록 점차 낮아짐을 확인할 수 있다.
 
@@ -162,6 +162,6 @@ Test accuracy = 0.9686
 위는 한 epoch을 돌 때마다 정답률을 프린트 한 것이다. 정답률이 점차 높아짐을 확인할 수 있다.
 
 
-<img src="./screenshot/07_back1.png" width="600">
+<img src="./screenshot/07_back4.png" width="600">
 
 위는 분류에 실패한 예의 이미지를 그린 것이다.
