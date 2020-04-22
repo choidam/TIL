@@ -1,6 +1,5 @@
 # ForwardPass 구현하기 (1)
 
-
 ### Sigmoid Function
 
 ```python
@@ -104,3 +103,27 @@ def softmax(x)  :
 
 일반적으로 Neural Network 기반 multi-label classifier 의 마지막 층에서 사용한다.   
 출력값이 0부터 1사이의 값이다. 출력의 합계는 1이다.
+
+<br/>
+
+## Loss Function
+
+지금 예측이 얼마나 좋은지 알 수 있는 함수. 0에 가까울 수록 학습이 잘 된 모델이다.
+
+### 1. MSE (Mean Squared Error)
+
+선형 회귀는 적절한 가중치 (w) 와 편향(b) 를 찾기 위해  **평균 제곱 오차(MSE)** 를 최소화하는 파라미터 w 와 b 를 찾는다.   
+실제 라벨값과 예측값의 차이가 작으면 작을 수록 예측 성능이 좋기 때문이다.
+
+```python
+def mean_squared_error(y,t):
+    return np.mean((y-t)**2)
+```
+
+### 2. CSE (Croww Entropy Error)
+
+```python
+def cross_entropy_error(y,t):
+    return -np.sum(t * np.log(y + 1e-9)) / y.shape[0]
+```
+`softmax` 를 사용했을 때 (분류 했을 때) 주로 사용한다. 

@@ -67,3 +67,14 @@ Perceptron이 가중치를 직접 수동으로 설정하는 작업을 한다는 
 
 입력이 0을 넘으면 그 입력을 그대 출력하고, 0 이하면 0을 출력하는 함수이다.
 
+
+<br/>
+
+어떤 상황에 어떤 활성화 함수를 써야 할까? 🤔
+
+1. 회귀 : `identity function` (출력 값을 그대로 반환하는 함수 )
+
+2. 분류 (0/1) : `sigmoid function`
+
+3. 분류 (multiple) : `softmax function`
+
