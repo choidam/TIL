@@ -26,3 +26,27 @@ w = w + (-grad) * learning_rate
 비용 함수를 `w` 에 대해 편미분 하면 현재 `w` 위치에서 접선의 기울기와 같다.    
 이 접선 기울기의 절대값이 0이 될 때가 최적의 `w` 값이 된다. 
 
+<br/>
+
+### Example
+
+<img src="./screenshot/06_grad3.png" width="400">
+
+```
+f(x,y,z) = (x+y)z
+q = x + y
+```
+x = -2, y = 5, z = -4 이라고 한다면   
+x에 대한 편미분 값은 -4, y는 -4, z는 3일 것이다.
+
+<img src="./screenshot/06_grad4.png" width="600">
+
+이는 **Chain Rule** 로 확인할 수 있다.   
+한 변수에 대한 편미분 값은 upstream gradient 와 local gradient 를 곱한 값이다.
+
+<img src="./screenshot/06_grad5.png" width="600">
+
+위 초록색은 계산 값이고, 초록색은 편미분 값이다.   
+
+add의 local gradient 는 언제나 1이므로 upstream gradient 와 동일하고,   
+multiple 의 local gradient 는 곱하는 값 * upstream gradient 임을 확인할 수 있다.   
