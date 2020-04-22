@@ -32,6 +32,8 @@
 - [Perceptron & Neural Network](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/04_NeuralNetwork.md)
 - [Forward Pass (1)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/05_Forward_pass.md)
 - [Forward Pass (2)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/05_Forward_pass2.md)
+- [Gradient Descent ](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/06_Gradient_Descent.md)
+
 
 ---
 
