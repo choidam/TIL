@@ -34,7 +34,7 @@
 - [Forward Pass (2)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/05_Forward_pass2.md)
 - [Gradient Descent ](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/06_Gradient_Descent.md)
 - [Back Propagation (1)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/07_Back_Propagation.md)
-
+- [Back Propagation (2)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/07_Back_Propagation2.md)
 
 ---
 
