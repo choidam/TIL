@@ -1,33 +1,5 @@
 # ForwardPass 구현하기 (1)
 
-### Sigmoid Function
-
-```python
-import numpy as np
-import matplotlib.pylab as plt
-
-def sigmoid(x):
-    return 1 / (1+np.exp(-x))
-
-print(sigmoid(1))
-print(sigmoid(np.array([0,0.5,1])))
-
-x = np.arange(-10.0, 10.0, 0.1)
-y = sigmoid(x)
-
-plt.plot(x,y)
-plt.ylim(-0.1, 1.1)
-plt.show()
-```
-```profile
-0.7310585786300049
-[0.5        0.62245933 0.73105858]
-```
-
-<img src="./screenshot/04_nn.png" width="400">
-
-<br/>
-
 ### 단순 신경망 구조 만들기
 
 <img src="./screenshot/04_nn2.png" width="300">
