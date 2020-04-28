@@ -35,6 +35,7 @@
 - [Gradient Descent ](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/06_Gradient_Descent.md)
 - [Back Propagation (1)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/07_Back_Propagation.md)
 - [Back Propagation (2)](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/07_Back_Propagation2.md)
+- [Training NeuralNet(1) : Activation Function](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/08_Training_NeuralNet1.md)
 
 ---
 
