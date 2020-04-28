@@ -23,7 +23,7 @@ sigmoid 는 함수값이 (0,1) 로 제한되며, 중간 값은 1/2 이다.
 신경망 초기에 많이 사용되었지만 크게 세 가지 단점으로 지금은 사용하지 않는다.
 
 
-### 1. Vanishing Gradient
+### 문제 1: Vanishing Gradient
 
 <img src="./screenshot/08_train05.png" width="300">
 
@@ -34,7 +34,7 @@ sigmoid 는 함수값이 (0,1) 로 제한되며, 중간 값은 1/2 이다.
 따라서 이 값을 계속 곱해줄 수록 weight 변화량은 매우 작아져 잘 업데이트 되지 않는다.
 
 
-### 2. Not zero - centered (slow convergence)
+### 문제 2: Not zero - centered (slow convergence)
 
 함수값 중심이 0이 아니라 학습이 느려질 수 있다.
 
@@ -46,7 +46,7 @@ sigmoid 는 함수값이 (0,1) 로 제한되며, 중간 값은 1/2 이다.
  
  따라서 같은 방향으로 update되는데 이러한 과정은 학습을 zigzag 형태로 만들어 느리게 만드는 원인이 된다.
 
-### 3. cost exp function
+### 문제 3: cost exp function
 
 exp(x) 함수는 시간이 많이 걸린다.
 

@@ -2,9 +2,9 @@
 
 ## Optimization
 
-<img src="opt.gif" width="400">
+<img src="screenshot/opt.gif" width="400">
 
-<img src="opt2.gif" width="500">
+<img src="screenshot/opt2.gif" width="500">
 
 ### SGD (Stochastic gradient descent)
 
