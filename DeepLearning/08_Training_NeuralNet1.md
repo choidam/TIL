@@ -14,7 +14,7 @@
 시그모이드 함수는 선형인 multi perceptron 에서 비선형 값을 얻기 위해 사용하기 시작했다.      
 아래는 시그모이드 함수와 시그모이드 미분 함수를 그래프로 나타낸 것이다.
 
-<img src="./screenshot/08_train01.png" width="150">
+<img src="./screenshot/08_train01.png" width="200">
 
 <img src="./screenshot/08_train02.png" width="700">
 
@@ -87,15 +87,14 @@ ReLU 함수는 최근 가장 많이 사용되는 활성화 함수이다.
 
 `leakly ReLU` 는 `ReLU` 뉴런이 죽는 **Dying ReLU** 현상을 해결하기 위해 나온 함수이다.
 
-<img src="./screenshot/08_train10.png" width="100">
+<img src="./screenshot/08_train10.png" width="200">
 
-위의 식에서 0.01 대신 다른 매우 작은 값도 사용이 가능하다. (Hyper parameter)
-
+위의 식에서 0.01 대신 다른 매우 작은 값도 사용이 가능하다. (Hyper parameter)   
 Leakly ReLU 는 음수의 x값에 대해 미분값이 0이 되지 않는다는 점을 제외하면 ReLU 와 같은 특성을 가진다.
 
 ### PReLU
 
-<img src="./screenshot/08_train11.png" width="100">
+<img src="./screenshot/08_train11.png" width="200">
 
 Leakly ReLU 와 거의 유사하지만, 새로운 파라미터 `⍺`  를 추가하여 `x<0` 에서 기울기를 학습할 수 있게 했다.
 
@@ -103,7 +102,7 @@ Leakly ReLU 와 거의 유사하지만, 새로운 파라미터 `⍺`  를 추가
 
 ## 5. ELU Function (Exponential Linear Unit)
 
-<img src="./screenshot/08_train15.png" width="100">
+<img src="./screenshot/08_train15.png" width="200">
 
 <img src="./screenshot/08_train14.png" width="600">
 
@@ -116,10 +115,9 @@ Leakly ReLU 와 거의 유사하지만, 새로운 파라미터 `⍺`  를 추가
 
 ## 6. Maxout Function
 
-<img src="./screenshot/08_train16.png" width="100">
+<img src="./screenshot/08_train16.png" width="200">
 
-이 함수는 ReLU가 가지는 모든 장점을 가졌으며, dying ReLU문제 또한 해결한다. 
-
+이 함수는 ReLU가 가지는 모든 장점을 가졌으며, dying ReLU문제 또한 해결한다.    
 하지만 계산량이 복잡하다는 단점이 있다.
 
 <br/>
