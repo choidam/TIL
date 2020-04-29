@@ -7,8 +7,6 @@
 
 ### 문제 발생 1. W 가 모두 같은 경우 (혹은 다 0인 경우)
 
-<img src="./screenshot/08_nn01.png" width="300">
-
 만약 데이터를 평균 0으로 정규화 시킨다면, 가중치를 0으로 초기화 시킨다는 것이 합리적으로 보일 수 있다.   
 그러나 실제로 0으로 가중치를 초기화하면 모든 뉴런들이 같은 값을 나타낼 것이고, 역전파 과정에서 각 가중치의 update 가 동일하게 이뤄질 것이다. 결국 제대로 학습하기 어려울 것이다.
 
@@ -116,7 +114,7 @@ Gradient가 0이 되어학습이 진행되지 않는다.
 
 <br/>
 
-가중치를 초기화 하는 방법들에 알아보자.
+가중치를 알맞게 초기화 하는 방법들에 알아보자.
 
 ### 초기화 1 : Xavier Initialization
 
@@ -161,8 +159,8 @@ Gradient Vanishing 현상을 완화하기 위해서 가중치를 초기화 할 �
 
 <img src="./screenshot/08_relu2.png" width="700">
 
-`Xavier` 초기화 방법과  `ReLU` 함수를 결합했을 때 그래프이다. 출력값, 평균, 표준편차 모두 0으로 수렴함을 확인할 수 있다.   
-`ReLU` 함수를 사용할 경우에는 `Xavier` 초기화 방법을 사용할 수 없다.ㄴ
+`Xavier` 초기화 방법과  `ReLU` 함수를 결합했을 때 그래프이다. 출력값, 평균, 표준편차 모두 0으로 수렴한다.
+그러므로 `ReLU` 함수를 사용할 경우에는 `Xavier` 초기화 방법을 사용할 수 없다.
 
 
 ### 초기화 2 : He Initialization
@@ -172,7 +170,7 @@ Gradient Vanishing 현상을 완화하기 위해서 가중치를 초기화 할 �
 ```
 <img src="./screenshot/08_he1.png" width="500">
 
-<img src="./screenshot/08_hes2.png" width="700">
+<img src="./screenshot/08_he2.png" width="700">
 
 `He` 초기화와 `ReLU` 함수를 사용했을 때의 그래프이다. 10층 layer에서도 평균과 표준편차가 모두 0으로 수렴하지 않는다.
 
@@ -192,9 +190,7 @@ Gradient Vanishing 현상을 완화하기 위해서 가중치를 초기화 할 �
 
 신경망의 각 layer 에서 데이터 (배치) 의 분포를 정규화 하는 작업이다.    
 
-<img src="./screenshot/08_bn1.png" width="200">
-
-<img src="./screenshot/08_bn2.png" width="500">
+<img src="./screenshot/08_bn1.png" height="300"> <img src="./screenshot/08_bn2.png" height="300">
 
 깊은 신경망일 수록 같은 Input 값을 갖더라도 가중치가 조금만 달라지면 완전히 다른 값을 얻을 수 있다. 이를 해결하기 위해 각 층의 출력값에 배치 정규화 과정을 추가해준다면 가중치의 차이를 완화하여 보다 안정적인 학습이 이루어질 수 있다.   
 
@@ -221,7 +217,7 @@ Gamma 와 Beta 를 학습하도록 하면 Normalize 효과를 어느정도 적�
 
 - Activation Function : use ReLU
 - Data preprocessing: subtract mean
-- Weight Initialization: user Xavier / He init
+- Weight Initialization: use Xavier or He 
 - Batch Normalization : use
 - Babysitting the learning process
-- Hyperparameter optimization : random sample hyperparams, in log space when appropriate
+- Hyperparameter optimization : random sample hyperparams 👉 grid
