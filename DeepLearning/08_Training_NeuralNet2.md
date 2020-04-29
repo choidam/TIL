@@ -1,14 +1,6 @@
 # Training NeuralNet (2) 
 
-1. [Weight Initialization](#1. Weight Initialization)
-2. [Batch Normalization](#2. Batch Normalization)
-3. [Babysitting the Learning Process](#3. Babysitting the Learning Process)
-4. [Hyperparameter Optimization](#4. Hyperparameter Optimization)
-
-
-<br/>
-
-## 1. Weight Initialization
+## Weight Initialization
 
 딥러닝 학습에 있어서 초기 가중치 설정은 매우 중요한 역할을 한다.   
 초기값 설정을 잘못해 문제가 발생하는 경우들을 살펴보자.
@@ -90,7 +82,9 @@ hidden layer 10 had mean -0.0013684972820372828 and std 0.981809472200405
 
 <img src="./screenshot/08_nn03.png" width="500">
 
-<img src="./screenshot/08_nn02.png" width="800">
+<img src="./screenshot/08_nn02.png" width="700">
+
+처음 layer에는 정규 분포가 잘 이루어지지만 layer가 쌓일 수록 0에 뭉친다.
 
 x가 0에 가까워지면 gradient도 0에 가까워져서 Vanishing gradient 가 발생한다.
 
@@ -115,9 +109,10 @@ hidden layer 10 had mean 0.0015641156086318114 and std 0.9818682873635451
 ```
 <img src="./screenshot/08_nn05.png" width="500">
 
-<img src="./screenshot/08_nn04.png" width="800">
+<img src="./screenshot/08_nn04.png" width="700">
 
-Gradient가 0이 되어학습이 진행되지 않는다.
+Gradient가 0이 되어학습이 진행되지 않는다.   
+값이 너무 클 경우 분포가 양쪽으로 튄다.
 
 <br/>
 
@@ -128,6 +123,8 @@ Gradient가 0이 되어학습이 진행되지 않는다.
 ```python
     W = np.random.randn(fan_in, fan_out) / np.sqrt(fan_in)
 ```
+
+`Xavier` 초기화 방법은 표준 정규 분포를 입력 개수의 표준 편차로 나누는 방법이다.
 
 ```profile
 input layer had mean -0.0007602850190879709 and std 0.9998665656626502
@@ -144,11 +141,28 @@ hidden layer 10 had mean 0.00011454739685321903 and std 0.22988941690330594
 ```
 <img src="./screenshot/08_xavier1.png" width="500">
 
-<img src="./screenshot/08_xavier2.png" width="800">
+<img src="./screenshot/08_xavier2.png" width="700">
 
 이전 노드와 다음 노드의 개수에 의존하는 방법이다. 
 
-`Xavier` 함수는 비선형 함수 (`sigmoid`, `tanh`) 에서 효과적인 결과를 보여준다. 하지만 `ReLU` 함수에서 사용 시 출력값이 0으로 수렵하게 되는 현상을 확인할 수 있다. 따라서 `ReLU` 함수에는 또 다른 초기화 방법을 사용해야 한다.
+Gradient Vanishing 현상을 완화하기 위해서 가중치를 초기화 할 때 `sigmoid` 와 같은 s 자 함수의 경우 가장 중요한 것은 출력값들이 **표준 정규 분포** 형태를 갖게 하는 것이다. 출력값들이 표준 정규 분포 형태를 갖게 되어야 안정적으로 학습이 가능하기 때문이다.
+
+`Xavier` 함수는 비선형 함수 (`sigmoid`, `tanh`) 에서 효과적인 결과를 보여준다. 
+
+
+```python
+    nonlinearities = ['relu']*len(hidden_layer_sizes)
+```
+
+```python
+    W = np.random.randn(fan_in, fan_out) / np.sqrt(fan_in)
+```
+<img src="./screenshot/08_relu1.png" width="500">
+
+<img src="./screenshot/08_relu2.png" width="700">
+
+`Xavier` 초기화 방법과  `ReLU` 함수를 결합했을 때 그래프이다. 출력값, 평균, 표준편차 모두 0으로 수렴함을 확인할 수 있다.   
+`ReLU` 함수를 사용할 경우에는 `Xavier` 초기화 방법을 사용할 수 없다.ㄴ
 
 
 ### 초기화 2 : He Initialization
@@ -156,68 +170,50 @@ hidden layer 10 had mean 0.00011454739685321903 and std 0.22988941690330594
 ```python
     W = np.random.randn(fan_in, fan_out) / np.sqrt(2/fan_in)
 ```
+<img src="./screenshot/08_he1.png" width="500">
 
-```profile
-input layer had mean -0.0011450863339822492 and std 1.000081508751302
-hidden layer 1 had mean 0.00031914610114501144 and std 0.9988462279315763
-hidden layer 2 had mean 0.0007438429591919188 and std 0.9988702745805579
-hidden layer 3 had mean -0.0004157920971949518 and std 0.9988516421584084
-hidden layer 4 had mean 0.0013355473511870704 and std 0.9988728127792286
-hidden layer 5 had mean 0.0022546774264920765 and std 0.9988102361233384
-hidden layer 6 had mean -0.0008834961822223749 and std 0.9988561182537576
-hidden layer 7 had mean -0.0007944776103250633 and std 0.998888659921806
-hidden layer 8 had mean 0.002610906298623285 and std 0.9988776807656174
-hidden layer 9 had mean -0.002422902735376541 and std 0.9988868167237107
-hidden layer 10 had mean 0.0019357676392045625 and std 0.9988350390063621
-```
+<img src="./screenshot/08_hes2.png" width="700">
+
+`He` 초기화와 `ReLU` 함수를 사용했을 때의 그래프이다. 10층 layer에서도 평균과 표준편차가 모두 0으로 수렴하지 않는다.
+
+
+### Conclusion on Weight Initialization
+
+- `sigmoid`, `tanh` : use `Xavier`
+-`ReLU` : use `He`
 
 <br/>
 
+## Batch Normalization
 
-## 2. Batch Normalization
+**배치 정규화** 는 Activation Function 의 활성화값 또는 출력값을 정규화 (정규 분포로 만듦) 하는 작업을 말한다. 
 
-**배치 정규화** 는 Activation Function 의 활성화값 또는 출력값을 정규화 (정규 분포로 만듦) 하는 작업을 말한다. 신경망의 각 layer 에서 데이터 (배치) 의 분포를 정규화 하는 작업이다.    
+> 신경망을 학습시킬 때 보통 전체 데이터를 한 번에 학습시키지 않고 조그만 단위로 분할해서 학습을 시키는 데 이 때 조그만 단위가 배치다. 
 
-<img src="./screenshot/08_bn1.png" width="300">
+신경망의 각 layer 에서 데이터 (배치) 의 분포를 정규화 하는 작업이다.    
 
-<img src="./screenshot/08_bn2.png" width="600">
+<img src="./screenshot/08_bn1.png" width="200">
 
-학습을 할 때마다 활성화 값, 출력값을 정규화 하기 때문에 초기화 (가중치 초깃값) 문제에서 비교적 자유로워진다.
+<img src="./screenshot/08_bn2.png" width="500">
 
-각 hidden layer 에서 정규화를 하면서 입력 분포가 일정하게 되고, 이에 따라 Learning rate 를 크게 설정해도 괜찮아진다.   
-결과적으로 **학습 속도가 빨라지게 된다.**
+깊은 신경망일 수록 같은 Input 값을 갖더라도 가중치가 조금만 달라지면 완전히 다른 값을 얻을 수 있다. 이를 해결하기 위해 각 층의 출력값에 배치 정규화 과정을 추가해준다면 가중치의 차이를 완화하여 보다 안정적인 학습이 이루어질 수 있다.   
 
-결과적으로
+입력 분포가 일정하게 되어 Learning rate 를 크게 설정해도 괜찮아진다.
+
+<img src="./screenshot/08_batch1.png" width="500">
+
+출력값을 정규화 할 때 평균, 표준편차, 얼마나 이동시킬지 등의 parameter 들 또한 역전파를 통해 학습이 가능하다.   
+Gamma 와 Beta 를 학습하도록 하면 Normalize 효과를 어느정도 적용할 지 적용이 가능하다.
+
+
+### Conclusion on Batch Normalization
 
 - 학습 속도가 개선된다. (학습률을 높게 설정할 수 있기 때문)
 - 가중치 초깃값 선택의 의존성이 적어진다. (학습을 할 때마다 출력값을 정규화하기 때문)
 - overfitting (과적합) 위험을 줄일 수 있다. drop out 같은 기법 대체 가능
 - Gradient Vanishing 문제 해결이 가능하다.
 
-<br/>
-
-##  3. Babysitting the Learning Process
-
-신경망을 학습하면서 체크해보아야 할 사항들이 있다.
-
-### 1. Preprocess the data
-
-<img src="./screenshot/08_baby1.png" width="600">
-
-### 2. Choose the architecture
-
-<img src="./screenshot/08_baby2.png" width="600">
-
-50 뉴런의 hidden layer 1개를 가지고 있다고 가정하자.
-
-### 3. Double check that the loss is reasonable
-
-### 4. Find Learning rate
-
-<br/>
-
-## 4. Hyperparameter Optimization
-
+그러니까 🔥 사용하는게 좋다 🔥
 
 <br/>
 
