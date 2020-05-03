@@ -2,12 +2,6 @@
 
 > 참고 자료 : R 통계분석 (2019-1)
 
-### 목적
-
-- 적합한 데이터 생성: 난수, 확률 분포
-- 그룹, 집단, 형태 등의 "차이 검정"
-- 요소와 요소간의 인과관계(상관관계) 의 파악
-
 ### 분석 방법
 
 - 차이 검정
@@ -32,7 +26,7 @@ plot(density(rnorm(100000, 0, 10)))
 pnorm(0) # 0.5
 qnorm(0.5) # 0. 전체 누적값을 0.5로 만들어 주는 x의 값
 ```
-<img src="./screenshot/06_plot1.png" width="300">
+<img src="./screenshots/06_plot1.png" width="300">
 
 - `dnorm` : 확률 밀도 함수 (probability density function). 확률 분포 함수값
 - `pnorm` : 누적 분포 함수 (cumulative distribution function). 밀도 함수. 누적된 값의 면적
@@ -58,7 +52,7 @@ plot(x,y,type="l",
 pnorm(4, mean=7.5, sd=1.5, lower.tail = TRUE) # 0.009815329
 ```
 
-<img src="./screenshot/06_plot2.png" width="300">
+<img src="./screenshots/06_plot2.png" width="300">
 
 2. 어린이가 8리터 이하의 물을 마실 확률과 정규 곡선에 해당 영역을 지정하여 색칠하시오.
 
@@ -83,7 +77,7 @@ title(pb.results)
 
 ```
 
-<img src="./screenshot/06_plot1.png" width="300">
+<img src="./screenshots/06_plot1.png" width="300">
 
 <br/>
 
@@ -208,10 +202,11 @@ mosaic(car_table2,
     - Two sided test : 양측 검정으로 같지 않음을 검정
     - One sided test : 크거자 작음을 검정
     
-**p-value**
+**p-value**   
+
 귀무 가설을 참이라고 생각했을 때 주어진 데이터 또는 그보다 극단적인 데이터가 관측될 확률
 
-기각역을 0.05 (귀무 가설에 95% 의 신뢰도를 줌) 로 둔 경우 p-value 가 0.05보다 작으면
+기각역을 0.05 (귀무 가설에 95% 의 신뢰도를 줌) 로 둔 경우 p-value 가 0.05보다 작으면   
 - 귀무 가설이 참이라 믿었는데 관찰된 데이터는 그 가정하에서는 좀처럼 볼 수 없음 >> 같은 분포 아님.
 - 귀무 가설이 사실이 아니라고 볼 수 밖에 없으므로 대립 가설을 참이라고 판단 >> 귀무 가설 기각. 대립 가설 채택
 
