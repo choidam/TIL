@@ -48,6 +48,7 @@
 - [Data Processing](https://github.com/ChoiEunji0114/TIL/blob/master/R/04_R_data_processing_1.md)
 - [Load XML Using API](https://github.com/ChoiEunji0114/TIL/blob/master/R/05_use_API.md)
 - [Statistical Analysis (1)](https://github.com/ChoiEunji0114/TIL/blob/master/R/06_Statistical_Analysis_1.md)
+- [Statistical Analysis (2)](https://github.com/ChoiEunji0114/TIL/blob/master/R/06_Statistical_Analysis_2.md)
 
 ---
 
