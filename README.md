@@ -38,6 +38,7 @@
 - [Training NeuralNet(1) : Activation Function](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/08_Training_NeuralNet1.md)
 - [Training NeuralNet(2) : Weight Initialization, Batch Normalization](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/08_Training_NeuralNet2.md)
 - [Training NeuralNet(3) : Optimization, Ensemble, Dropout ](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/08_Training_NeuralNet3.md)
+- [Text Sequence : One hot encoding & Word Embedding](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/10_text_sequence.md)
 
 ---
 
