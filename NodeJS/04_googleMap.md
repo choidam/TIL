@@ -39,7 +39,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 내 위치 접근 허용을 거부했을 때 에러를 처리한다. 
 
 2. `initialize`
-```
+```js
 function initialize() {
 
     // default map

@@ -68,4 +68,5 @@
 - [Install Express](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/01_install_express.md)
 - [Connect to MySQL](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/02_connect_mysql.md)
 - [Call API](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/03_API_call.md)
-- [Google MapI](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/04_googleMap.md)
+- [Google Map](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/04_googleMap.md)
+- [Draw Chart](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/05_draw_Chart.md)
