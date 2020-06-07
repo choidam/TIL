@@ -10,6 +10,7 @@
 - [Eratosthenes](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/erathosthenes.md)
 - [Euclidean algorithm](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/Euclidean_algorithm.md)
 - [Greedy](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/greedy.md)
+- [Genetic algorithm](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/genetic.md)
 
 ---
 
