@@ -1,8 +1,12 @@
 # RestAPI With MySQL 
 
-> 선수환경 : MySQL
+> 선수환경 : MySQL 준비
 
 <img src="./screenshots/2-mysql.png" width="400">
+
+```
+$ mysql.server start
+```
 
 <br/>
 
