@@ -25,6 +25,10 @@ sequence 길이에 관계 없이 input, output 을 받아들일 수 있는 네�
 
 ## LSTM (Long Short Term Memory)
 
+<img src="./screenshot/11_rnn3.png" width="600">
+
+<img src="./screenshot/11_rnn4.png" width="400">
+
 RNN 의 vanishing gradient problem 문제를 해결하기 위해 고안된 알고리즘이다.
 
 LSTM 은 RNN의 hidden state 에 **cell-state** 를 추가한 구조이다.
@@ -35,5 +39,7 @@ LSTM은 cell state와 hidden state 가 재귀적으로 구해지는 구조이다
 <br/>
 
 ## GRU (Gated Recurrent Unit)
+
+<img src="./screenshot/11_rnn5.png" width="400">
 
 LSTM 과 유사하나 computation 이 더 빠르다.
