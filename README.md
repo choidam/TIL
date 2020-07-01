@@ -4,7 +4,7 @@
 
 <br/>
 
-### Algorithm
+## Algorithm
 - [Floyd-warshall algorithm](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/floyd-warshall.md)
 - [DFS & BFS](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/DFS_and_BFS.md)
 - [Eratosthenes](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/erathosthenes.md)
@@ -12,9 +12,9 @@
 - [Greedy](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/greedy.md)
 - [Genetic algorithm](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/genetic.md)
 
----
+<br/>
 
-### iOS
+## iOS
 - [Calendar](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/calendar.md)
 - [Picker](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/picker.md)
 - [TabBar using Storyboard Reference](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/StoryboardReference.md)
@@ -25,9 +25,9 @@
 - [Drawing with canvasView](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/drawing.md)
 - [CoreData](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/coreData.md)
 
----
+<br/>
 
-### Deep Learning
+## Deep Learning
 - [Install tensorflow](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/01_install_tensorflow.md)
 - [Scipy Tutorial](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/03_scipy.md)
 - [Perceptron & Neural Network](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/04_NeuralNetwork.md)
@@ -41,9 +41,9 @@
 - [Training NeuralNet(3) : Optimization, Ensemble, Dropout ](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/08_Training_NeuralNet3.md)
 - [Text Sequence : One hot encoding & Word Embedding](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/10_text_sequence.md)
 
----
+<br/>
 
-### R
+## R
 - [Install R & RStudio](https://github.com/ChoiEunji0114/TIL/blob/master/R/01_install_Rstudio.md)
 - [Basic R Grammer](https://github.com/ChoiEunji0114/TIL/blob/master/R/02_R_basic.md)
 - [Read & Write File Data](https://github.com/ChoiEunji0114/TIL/blob/master/R/03_Read_Write_Data.md)
@@ -52,9 +52,9 @@
 - [Statistical Analysis (1)](https://github.com/ChoiEunji0114/TIL/blob/master/R/06_Statistical_Analysis_1.md)
 - [Statistical Analysis (2)](https://github.com/ChoiEunji0114/TIL/blob/master/R/06_Statistical_Analysis_2.md)
 
----
+<br/>
 
-### DataBase Project 
+## DataBase Project 
 
 - [Install docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/01_install_docker.md)
 - [Run docker](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/02_run_docker.md)
@@ -62,9 +62,9 @@
 - [SQL Database](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/04_SQL_Database.md)
 - [JDBC on Ubuntu Container](https://github.com/ChoiEunji0114/TIL/blob/master/DatabaseProject/05_JDBC.md)
 
----
+<br/>
 
-### NodeJS
+## NodeJS
 
 - [Install Express](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/01_install_express.md)
 - [Connect to MySQL](https://github.com/ChoiEunji0114/TIL/blob/master/NodeJS/02_connect_mysql.md)
