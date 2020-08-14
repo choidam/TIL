@@ -14,19 +14,6 @@
 
 <br/>
 
-## iOS
-- [Calendar](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/calendar.md)
-- [Picker](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/picker.md)
-- [TabBar using Storyboard Reference](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/StoryboardReference.md)
-- [Tap Gesture Recognizer](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/tapGestureRecognizer.md)
-- [UIImagePickerController](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/UIImagePickerController.md)
-- [Animated Bar Chart Using SwiftUI](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/animated_bar_chart_using_swiftUI.md)
-- [LineChart](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/lineChart.md)
-- [Drawing with canvasView](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/drawing.md)
-- [CoreData](https://github.com/ChoiEunji0114/TIL/blob/master/iOS/coreData.md)
-
-<br/>
-
 ## Deep Learning
 - [Install tensorflow](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/01_install_tensorflow.md)
 - [Scipy Tutorial](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/03_scipy.md)
