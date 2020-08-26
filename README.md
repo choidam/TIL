@@ -42,7 +42,7 @@
 
 ## BlockChain
 
--[what is blockchain? ](https://github.com/ChoiEunji0114/TIL/blob/master/BlockChain/01_blockchain.md)
+- [what is blockchain?](https://github.com/choidam/TIL/blob/master/BlockChain/01_blockchain.md)
 
 ## NodeJS
 
