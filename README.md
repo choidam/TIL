@@ -42,7 +42,8 @@
 
 ## BlockChain
 
-- [what is blockchain?](https://github.com/choidam/TIL/blob/master/BlockChain/01_blockchain.md)
+- [Introduction(1)](https://github.com/choidam/TIL/blob/master/BlockChain/01_introduction(1).md)
+- [Introduction(2)](https://github.com/choidam/TIL/blob/master/BlockChain/02_introduction(2).md)
 
 <br/>
 
