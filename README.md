@@ -14,6 +14,35 @@ Today I Learned 👩‍💻🔥
 
 <br/>
 
+## iOS
+
+- [FSCalendar 라이브러리 사용하기 ](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week01.md)
+- [Storyboard Reference 를 사용해 tabbar 분리하기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week06.md)
+- [UIImagePickerController 를 사용해 갤러리에서 이미지 가져오기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week07.md)
+- [SwiftUI 를 사용해 animated chart 그려보기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week08.md)
+- [Charts 라이브러리를 사용해 그래프 그리기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week09.md)
+- [캔버스에 그림 그리기 (굵기, 색상 지정)](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week10.md)
+- [CoreData 를 사용한 todo list app 만들기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week11.md)
+- [Youtube player 만들기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week12.md)
+- [Macaw 라이브러리를 사용해 animated chart 만들기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week13.md)
+- [URLSession 을 통해 API 연결하기 (미세먼지)](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week14.md)
+- [AVAudioPlayer 를 사용한 뮤직 플레이어 만들기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week15.md)
+- [XML 을 사용해 UI 만들기 (1) ](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week16.md)
+- [XML 을 사용해 UI 만들기 (2) ](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week17.md)
+- [Navigation Bar custom 하기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week18.md)
+- [AppleMap 을 사용해 지도 구현하기 (내 위치, 원하는 위치에 좌표 찍기)](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week20.md)
+- [RxSwift 처음 시작하기 (기본 개념)](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week22.md)
+- [RxSwift 의 기본 개념을 익히고 간단한 실습 진행하기 (Observable, Subject, Operator, Binding)](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week24.md)
+- [Infinite scroll 을 만들어보기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week25.md)
+- [ViewController 의 생명주기](https://github.com/iOS-SOPT-iNNovation/eunjizzang/blob/master/study/week26.md)
+- [카카오 소셜 로그인 구현하기](https://silver-g-0114.tistory.com/102)
+- [애플 로그인 구현하기](https://silver-g-0114.tistory.com/104)
+- [NotificationCenter 사용하기](https://silver-g-0114.tistory.com/106)
+- [property observer - didSet, willSet 사용하기](https://silver-g-0114.tistory.com/107)
+- [UIFontPickerViewController 사용해 폰트 적용하기](https://silver-g-0114.tistory.com/113)
+
+<br/>
+
 ## Deep Learning
 - [Install tensorflow](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/01_install_tensorflow.md)
 - [Scipy Tutorial](https://github.com/ChoiEunji0114/TIL/blob/master/DeepLearning/03_scipy.md)
