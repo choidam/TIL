@@ -18,8 +18,9 @@ Xcode 에서 프로젝트를 생성하면 자동으로 추가되는 `SceneDelega
 
 <div align="center"><img src="./screenshots/scene3.png" width="600"> </div>
 
-- scene(_:willConnectTo:options:)
-  - 기존 AppDelegate 의 application(_:didFinishLaunchingWithOptions:) 와 기능이 유사합니다. 앱에 scene 이 추가될 때마다 호출됩니다.
+
+- `scene(_:willConnectTo:options:)`
+  - 기존 AppDelegate 의 `application(_:didFinishLaunchingWithOptions:)` 와 기능이 유사합니다. 앱에 scene 이 추가될 때마다 호출됩니다.
 - `sceneDidDisconnect(_:)` 
   - scene이 앱에서 disconnect 될 때 호출됩니다. 
 - `sceneDidBecomeActive(_:)` 
@@ -27,6 +28,6 @@ Xcode 에서 프로젝트를 생성하면 자동으로 추가되는 `SceneDelega
 - `sceneWillResignActive(_:)` 
   - scene과 상호작용을 중지할 때 호출됩니다. 
 - `sceneWillEnterForeground(_:)` 
-  - scene이 foreground에 들어갈 때 호출됩니다. (예로 앱이 시작하거나 background에서 다시 시작될 때)
+  - scene이 foreground에 들어갈 때 호출됩니다. (앱이 시작하거나 background에서 다시 시작될 때)
 - `sceneDidEnterBackground(_:)` 
   - scene이 background에 들어갈때 때 호출됩니다.
