@@ -100,11 +100,15 @@ int main(int argc, char **argv)
 
 이제 (-5,3)을 꺼내올 차례입니다. dist[3]은 5이고, 큐에서 꺼내온 값 역시 5이므로 if문에 걸리지 않고 for루프를 돕니다. 이제 3에 연결되어 있는 정점은 4로 연결된 cost가 1인 간선입니다. 그래서 그전에 있던 dist[3]과 4로 연결된 간선의 cost 1을 더한 값(6)과 dist[4]와 연결된 값과 비교해보니 6이 더 작으므로 dist[4]=6으로 갱신하고 (-6,4)를 큐에 집어 넣습니다.
 
-여기서 우선순위 큐를 사용하는 이유가 나옵니다. 만일 순서를 고려하지 않고 (-5, 3)이 큐에 맨 끝에 위치해있다면 이러한 갱신을 맨끝에 하게 되어 for루프를 돌게 되는 시간적인 낭비가 있게 되는 겁니다. 
-
-그렇기 때문에 가장 비용이 낮은 것이 먼저 나오는 것이 유리하다는 것이죠.
-
 
 
 <div align="center"><img src="./screenshots/dijkstra6.png" width="500"></div>
+
+다음 (-15,4)는 cost가 15이기 때문에 if조건에 걸려 continue됩니다. 
+
+
+
+<div align="center"><img src="./screenshots/dijkstra7.png" width="500"></div>
+
+<div align="center"><img src="./screenshots/dijkstra8.png" width="500"></div>
 
