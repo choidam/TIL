@@ -75,9 +75,9 @@ Today I Learned 👩‍💻🔥
 
 ## BlockChain
 
-- [chap 01 : Introduction(1)](https://github.com/choidam/TIL/blob/master/BlockChain/01_introduction(1).md)
-- [chap 01 : Introduction(2)](https://github.com/choidam/TIL/blob/master/BlockChain/02_introduction(2).md)
-- [chap 02 : How bitcoin works](https://github.com/choidam/TIL/blob/master/BlockChain/03_chap2.md)
+- [Introduction(1)](https://github.com/choidam/TIL/blob/master/BlockChain/01_introduction(1).md)
+- [Introduction(2)](https://github.com/choidam/TIL/blob/master/BlockChain/02_introduction(2).md)
+- [How bitcoin works](https://github.com/choidam/TIL/blob/master/BlockChain/03_chap2.md)
 
 <br/>
 
