@@ -13,6 +13,7 @@ Today I Learned 👩‍💻🔥
 - [Genetic algorithm](https://github.com/ChoiEunji0114/TIL/blob/master/algorithm/genetic.md)
 - [Dijkstra algorithm](https://github.com/choidam/TIL/blob/master/algorithm/dijkstra.md)
 - [BruteForce algorithm](https://github.com/choidam/TIL/blob/master/algorithm/brute-force.md)
+- [Dynamic Programming](https://github.com/choidam/TIL/blob/master/algorithm/Dynamic_programming.md)
 
 
 <br/>
