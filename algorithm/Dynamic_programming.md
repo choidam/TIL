@@ -45,5 +45,5 @@ function fib(n)
 
 <br/>
 
-> 참고하면 좋은 알고리즘 문제 : [백준 10870 : 피보나치수 5](https://github.com/choidam/Algorithm-study/blob/master/posts/boj-10870.md) , [백준 11052: 카드 구매하기](https://github.com/choidam/Algorithm-study/blob/master/posts/boj-11052.md)
+> 참고하면 좋은 알고리즘 문제 : [백준 10870 : 피보나치수 5](https://github.com/choidam/Algorithm-study/blob/master/posts/boj-10870.md) , [백준 11052: 카드 구매하기](https://github.com/choidam/Algorithm-study/blob/master/posts/boj-11052.md), [백준 1003: 피보나치수](https://silver-g-0114.tistory.com/11)
 
