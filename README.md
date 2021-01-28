@@ -14,6 +14,7 @@ Today I Learned 👩‍💻🔥
 - [Dijkstra algorithm](https://github.com/choidam/TIL/blob/master/algorithm/dijkstra.md)
 - [BruteForce algorithm](https://github.com/choidam/TIL/blob/master/algorithm/brute-force.md)
 - [Dynamic Programming](https://github.com/choidam/TIL/blob/master/algorithm/Dynamic_programming.md)
+- [Permutation using cpp](https://github.com/choidam/TIL/blob/master/algorithm/permutation.md)
 
 
 <br/>
