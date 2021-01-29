@@ -22,7 +22,7 @@ C++ 에서 `next_permutation` 혹은 `prev_permutaion` 함수를 통해 순열�
 using namespace std;
 
 int main(){
-	vector<int> v(4) = {1,2,3,4}
+	vector<int> v = {1,2,3,4}
 
 	do{
 		for(int i=0; i<4; i++){
@@ -63,7 +63,7 @@ int main(){
 using namespace std;
 
 int main(){
-	vector<int> v(4) = {1,2,3,4}
+	vector<int> v = {1,2,3,4}
 
 	do{
 		for(int i=0; i<4; i++){
