@@ -15,6 +15,7 @@ Today I Learned 👩‍💻🔥
 - [BruteForce algorithm](https://github.com/choidam/TIL/blob/master/algorithm/brute-force.md)
 - [Dynamic Programming](https://github.com/choidam/TIL/blob/master/algorithm/Dynamic_programming.md)
 - [Permutation using cpp](https://github.com/choidam/TIL/blob/master/algorithm/pemutation.md)
+- [BitMask using cpp](https://github.com/choidam/TIL/blob/master/algorithm/BitMask.md)
 
 
 <br/>
