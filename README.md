@@ -19,6 +19,7 @@ Today I Learned 👩‍💻🔥
 - [Tuple using cpp](https://github.com/choidam/TIL/blob/master/algorithm/tuple.md)
 - [Bubble Sort ](https://github.com/choidam/TIL/blob/master/algorithm/bubble-sort.md)
 - [Selection Sort ](https://github.com/choidam/TIL/blob/master/algorithm/selection-sort.md)
+- [Insertion Sort ](https://github.com/choidam/TIL/blob/master/algorithm/insertion-sort.md)
 
 
 <br/>
