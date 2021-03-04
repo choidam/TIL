@@ -18,6 +18,7 @@ Today I Learned 👩‍💻🔥
 - [BitMask using cpp](https://github.com/choidam/TIL/blob/master/algorithm/BitMask.md)
 - [Tuple using cpp](https://github.com/choidam/TIL/blob/master/algorithm/tuple.md)
 - [Bubble Sort ](https://github.com/choidam/TIL/blob/master/algorithm/bubble-sort.md)
+- [Selection Sort ](https://github.com/choidam/TIL/blob/master/algorithm/selection-sort.md)
 
 
 <br/>
